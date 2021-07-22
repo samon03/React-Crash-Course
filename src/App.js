@@ -35,11 +35,23 @@ function App() {
     )
   }
 
+  const addTask = (task) => {
+    const id = Math.floor(Math.random * 1000) + 1;
+
+    // merge input values with id 
+    const newTask = {id, ...task};
+
+    //add to tasks
+
+    setTask([...tasks, newTask]);
+
+  }
+
 
   return (
     <div className="container">
        <Header title="Task Tracker"/>
-       <AddTask />
+       <AddTask onAdd={addTask} />
        { tasks.length > 0 ?
           <Tasks tasks={tasks}  
             onDelete={deleteTask} 
