@@ -13,10 +13,10 @@ const AddTask = (props) => {
 
         if(!text) {
             alert('Please add a text');
-            return;
+            return
         }
 
-        props.onAdd({text, day, reminder});
+        props.onAdd({ text, day, reminder });
 
         setText('');
         setDay('');
