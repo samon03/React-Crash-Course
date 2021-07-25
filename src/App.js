@@ -38,10 +38,10 @@ function App() {
   }
 
   const addTask = (task) => {
-    const id = Math.floor(Math.random * 1000) + 1;
+    const id = Math.floor(Math.random() * 1000) + 1;
 
     // merge input values with id 
-    const newTask = {id, ...task};
+    const newTask = { id, ...task };
 
     //add to tasks
 
