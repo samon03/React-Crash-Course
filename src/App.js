@@ -55,8 +55,8 @@ function App() {
        <Header title="Task Tracker" 
             onAdd={ () => setShowAddTask(!showAddTask)}
             showAdd={showAddTask} />
-       <AddTask onAdd={addTask} />
-       { showAddTask && tasks.length > 0 ?
+      { showAddTask && <AddTask onAdd={addTask} />}
+       { tasks.length > 0 ?
           <Tasks tasks={tasks}  
             onDelete={deleteTask} 
             onToggle={reminder} />
