@@ -39,16 +39,18 @@ function App() {
     )
   }
 
-  const addTask = (task) => {
-    const id = Math.floor(Math.random() * 1000) + 1;
+  const addTask = async (task) => {
+    const res = await fetch('http://localhost:5000/tasks', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(task),
+    });
+    
+    const data = await res.json()
 
-    // merge input values with id 
-    const newTask = { id, ...task };
-
-    //add to tasks
-
-    setTasks([...tasks, newTask]);
-
+    setTasks([...tasks, data]);
   }
 
 

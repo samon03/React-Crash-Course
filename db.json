@@ -1,10 +1,28 @@
 {
   "tasks": [
     {
-      "id": 2,
-      "text": "Meeting at School",
+      "id": 1,
+      "text": "School",
       "day": "Feb 6th at 1:30pm",
       "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "V",
+      "day": "Feb 6th at 1:30pm",
+      "reminder": true
+    },
+    {
+      "id": 4,
+      "text": "JK",
+      "day": "Feb 6th at 1:30pm",
+      "reminder": true
+    },
+    {
+      "text": "Himin",
+      "day": "30 feb",
+      "reminder": false,
+      "id": 5
     }
   ]
 }
