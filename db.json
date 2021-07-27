@@ -21,7 +21,7 @@
     {
       "text": "Himin",
       "day": "30 feb",
-      "reminder": false,
+      "reminder": true,
       "id": 5
     }
   ]
